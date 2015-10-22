@@ -2,5 +2,5 @@
 
 PUSH YOUR SURNAMES HERE:
 
-*Nikonenko
-*Solomkin
+* Nikonenko
+* Solomkin
