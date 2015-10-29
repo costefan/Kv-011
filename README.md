@@ -6,4 +6,3 @@ PUSH YOUR SURNAMES HERE:
 * Solomkin
 
 # Free T-shirts
-* I want cool T-shirt 1
