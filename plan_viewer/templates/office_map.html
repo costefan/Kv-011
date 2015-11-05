@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+
+{% block stylecss %}
+    {{ block.super }}
+    <link href="{% static 'css/leaflet.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/leaflet.draw.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+
+{% block javascripts %}
+    {{ block.super }}
+    <script src="{% static 'js/leaflet.js'%}"></script>
+    <script src="{% static 'js/leaflet.draw.js'%}"></script>
+    <script src="{% static 'js/office_map_leaflet.js'%}"></script>
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="map" style="height: 580px;">
+
+    </div>
+
+{% endblock content %}
