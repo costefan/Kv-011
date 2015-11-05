@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<!DOCTYPE html><html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>
+    	SoftServe Office Plan Helper - {% block title %}{% endblock %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/base.css'%}" rel="stylesheet" type="text/css" />
+    {% block stylecss %}
+	{% endblock %}
+
+    <script src="{% static 'js/jquery-2.1.4.min.js'%}"></script>
+    <script src="{% static 'js/base.js'%}"></script>
+    {% block javascripts %}
+	{% endblock %}
+
+</head>
+<body>
+    <div class="wrapper_base">
+
+    {% block header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+    </div>
+
+    {% block pop_messages %}
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+    {% endblock %}
+
+</body>
+</html>

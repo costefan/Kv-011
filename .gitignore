@@ -5,6 +5,39 @@ __pycache__/
 # C extensions
 *.so
 
+# Compiled
+*.pyc
+._*
+
+#local_settings
+settings_mironnn.py
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# MySQL confs
+
+
+# pycharm settings
+.idea/
+
+# server static(add here)
+static_server/
+
+# media(add here)
+media/
+
 # Distribution / packaging
 .Python
 env/

@@ -4,5 +4,4 @@ PUSH YOUR SURNAMES HERE:
 
 * Nikonenko
 * Solomkin
-
-# Free T-shirts
+* Pashchenkov
