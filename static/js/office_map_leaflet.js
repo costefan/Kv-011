@@ -52,5 +52,14 @@ $(document).ready(function() {
         drawnItems.addLayer(layer);
     });
 
+    map.on('draw:created', function (e) {
+        var type = e.layerType;
+        var layer = e.layer;
+
+        var shape = layer.toGeoJSON()
+        var shape_for_db = JSON.stringify(shape);
+        alert(shape_for_db);
+    });
+
 
 })
