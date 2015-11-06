@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-    var map = L.map('map').setView([40.712216, -74.22655], 13);
+    var map = L.map('map', {crs: L.CRS.Simple}).setView([12, 10], 5);
     var imageUrl = 'https://s3.amazonaws.com/uploads.hipchat.com/466087/2978340/1nc1yFkOs8gkHmS/Kyiv1%20poverh%202-3-page-001.jpg',
     //var imageUrl = '/static/floor2.jpg',
-    imageBounds = [[40.712216, -74.22655], [40.803941, -74.12544]];
+    imageBounds = [[0, 0], [24.81, 17.54]];
 
     L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
