@@ -2,11 +2,12 @@ $(document).ready(function() {
 
     var map = L.map('map', {crs: L.CRS.Simple}).setView([12, 10], 5);
     var imageUrl = 'https://s3.amazonaws.com/uploads.hipchat.com/466087/2978340/1nc1yFkOs8gkHmS/Kyiv1%20poverh%202-3-page-001.jpg',
-    //var imageUrl = '/static/floor2.jpg',
     imageBounds = [[0, 0], [24.81, 17.54]];
-
     L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
+    var imageUrl2 = 'https://s3.amazonaws.com/uploads.hipchat.com/466087/2978340/zbQwAaqd068RvUE/table.jpg',
+    imageBounds2 = [[5, 3], [6.57, 4.80]];
+    L.imageOverlay(imageUrl2, imageBounds2).addTo(map);
 
     var drawnItems = new L.FeatureGroup();
     map.addLayer(drawnItems);
