@@ -18,7 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'plan_viewer.views.index', name='root_of_project'),
+    url(r'^$', 'SSP.plan_editor.views.index', name='root_of_project'),
 
-    url(r'^plan/', include('plan_viewer.urls')),
+    url(r'^edit_plan/', include('SSP.plan_editor.urls')),
 ]

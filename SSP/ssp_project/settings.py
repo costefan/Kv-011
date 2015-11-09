@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'plan_viewer',
+    'plan_editor',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'ssp_project.urls'
+ROOT_URLCONF = 'SSP.ssp_project.urls'
 
 TEMPLATES = [
     {
@@ -115,7 +115,7 @@ STATICFILES_DIRS = (
 # Media files folders and urls
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "/media/")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
 # server static folder
