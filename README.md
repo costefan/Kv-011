@@ -11,11 +11,3 @@
 #PIP requirements:
 * Django==1.8.6
 * psycopg2==2.6.1
-
-
-
-# Kv-011:
-* Nikonenko
-* Solomkin
-* Pashchenkov
-
