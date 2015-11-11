@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^$', 'plan_viewer.views.index', name='root_of_project'),
 
     url(r'^plan/', include('plan_viewer.urls')),
+    url(r'^auth/', include('loginsys.urls', namespace='auth')),
 ]
