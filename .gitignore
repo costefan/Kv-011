@@ -10,7 +10,7 @@ __pycache__/
 ._*
 
 #local_settings
-settings_mironnn.py
+/SSP/ssp_project/settings_mironnn.py
 
 # Installer logs
 pip-log.txt
@@ -36,7 +36,7 @@ pip-delete-this-directory.txt
 static_server/
 
 # media(add here)
-media/
+SSP/media/
 
 # Distribution / packaging
 .Python
