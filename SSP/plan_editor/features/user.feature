@@ -4,7 +4,7 @@ Feature: Login for site
   Scenario: Show login form
     Given a user
     When I visit url "http://localhost:8081"
-    Then I should see "http://localhost:8081/auth/login/?next=/"
+    Then I should see "http://localhost:8081/login/?next=/"
 
   Scenario: Logging in to our system
     Given a user

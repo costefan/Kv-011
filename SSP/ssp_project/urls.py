@@ -18,7 +18,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', 'SSP.plan_editor.views.index', name='root_of_project'),
-    url(r'^auth/', include('loginsys.urls', namespace='auth')),
-    url(r'^edit_plan/', include('SSP.plan_editor.urls')),
+    url(r'^$', 'plan_editor.views.index', name='root_of_project'),
+    url(r'^login/$', 'plan_editor.views.login', name='login'),
+    url(r'^logout/$', 'plan_editor.views.logout', name='logout'),
+    url(r'^edit_plan/', include('plan_editor.urls')),
 ]

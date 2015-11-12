@@ -29,7 +29,7 @@ def step_impl(context):
 @when('I log in')
 def step_impl(context):
     br = context.browser
-    br.visit('http://localhost:8081/auth/login/')
+    br.visit('http://localhost:8081/login/')
     br.find_by_css('#username').first.fill('Nt')
     br.find_by_css('#password').first.fill('111111')
     br.find_by_value('Log in').first.click()
@@ -44,7 +44,7 @@ def step_impl(context):
 @when('I gave not valid data')
 def step_impl(context):
     br = context.browser
-    br.visit('http://localhost:8081/auth/login/')
+    br.visit('http://localhost:8081/login/')
     br.find_by_css('#username').first.fill('User1')
     br.find_by_css('#password').first.fill('111111')
     br.find_by_value('Log in').first.click()
@@ -53,10 +53,6 @@ def step_impl(context):
 @then('I see login form and see error message')
 def step_impl(context):
     br = context.browser
-    eq(br.url, 'http://localhost:8081/auth/login/')
-    assert br.url == 'http://localhost:8081/auth/login/'
+    eq(br.url, 'http://localhost:8081/login/')
+    assert br.url == 'http://localhost:8081/login/'
     assert context.browser.is_element_present_by_css('.error')
-
-
-# TODO:
-# Invalid email or password add
