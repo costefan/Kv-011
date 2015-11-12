@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'loginsys',
     'plan_editor',
+    'django_behave',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,6 +52,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
 )
+
+TEST_RUNNER = 'django_behave.runner.DjangoBehaveTestSuiteRunner'
 
 ROOT_URLCONF = 'SSP.ssp_project.urls'
 
