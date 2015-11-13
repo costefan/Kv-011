@@ -3,8 +3,8 @@ Feature: Login for site
 
   Scenario: Show login form
     Given a user
-    When I visit url "http:/localhost:8081"
-    Then I should see "http:/localhost:8081/auth/login/"
+    When I visit url "http://localhost:8081"
+    Then I should see "http://localhost:8081/auth/login/?next=/"
 
   Scenario: Logging in to our system
     Given a user
@@ -14,4 +14,4 @@ Feature: Login for site
   Scenario: Logging with wrong data
     Given a user
     When I gave not valid data
-    Then I see login form
+    Then I see login form and see error message

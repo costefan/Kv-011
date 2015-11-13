@@ -30,5 +30,10 @@ def login(request):
 
 
 def logout(request):
+    """
+    user logout on system
+    :param request:
+    :return:
+    """
     auth.logout(request)  # delete this session
     return redirect('/')
